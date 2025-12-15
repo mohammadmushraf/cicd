@@ -5,23 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mohammad Mushraf | DevOps Engineer</title>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
   <!-- Icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
-  <!-- AOS Animation -->
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
   <style>
     :root {
-      --bg: #0b1120;
-      --card: #020617;
-      --text: #e5e7eb;
-      --muted: #94a3b8;
-      --accent: #38bdf8;
-      --gradient: linear-gradient(135deg, #38bdf8, #818cf8);
+      --bg: #f4f1ec;           /* paper-like */
+      --card: #ffffff;
+      --text: #2b2b2b;
+      --muted: #6b6b6b;
+      --accent: #7a5c3e;      /* vintage brown */
+      --border: #d6cfc4;
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -30,140 +27,151 @@
       font-family: 'Inter', sans-serif;
       background: var(--bg);
       color: var(--text);
-      line-height: 1.6;
+      line-height: 1.7;
     }
 
     header {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      padding: 120px 8% 80px;
       text-align: center;
-      background: radial-gradient(circle at top, #1e293b, #020617);
+      background: linear-gradient(to bottom, #ede7dd, #f4f1ec);
+      border-bottom: 1px solid var(--border);
     }
 
-    .hero h1 {
-      font-size: 3.5rem;
-      font-weight: 800;
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      letter-spacing: 1px;
+      color: #1f1f1f;
     }
 
-    .hero span { background: var(--gradient); -webkit-background-clip: text; color: transparent; }
-
-    .hero p { color: var(--muted); max-width: 700px; margin: 20px auto; }
-
-    .btns a {
-      display: inline-block;
-      margin: 10px;
-      padding: 14px 26px;
-      border-radius: 30px;
-      font-weight: 600;
-      color: #020617;
-      background: var(--gradient);
-      text-decoration: none;
+    header p {
+      margin-top: 15px;
+      color: var(--muted);
+      font-size: 1.1rem;
     }
 
-    section { padding: 80px 8%; }
+    section {
+      padding: 70px 8%;
+      max-width: 1100px;
+      margin: auto;
+    }
 
     h2 {
-      font-size: 2.2rem;
-      margin-bottom: 40px;
-      text-align: center;
-      background: var(--gradient);
-      -webkit-background-clip: text;
-      color: transparent;
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 35px;
+      color: var(--accent);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 10px;
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 25px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
     }
 
     .card {
-      background: rgba(2, 6, 23, 0.8);
-      border: 1px solid rgba(148, 163, 184, 0.1);
-      backdrop-filter: blur(10px);
-      padding: 25px;
-      border-radius: 16px;
-      transition: 0.4s;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 28px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     }
 
-    .card:hover { transform: translateY(-8px); border-color: #38bdf8; }
+    .card h3 {
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 10px;
+      color: #1f1f1f;
+    }
 
-    .card i { font-size: 28px; color: #38bdf8; margin-bottom: 15px; }
+    .card p, .card li {
+      color: #333;
+      font-size: 0.95rem;
+    }
+
+    ul { padding-left: 18px; }
 
     footer {
       text-align: center;
       padding: 30px;
-      background: #020617;
+      background: #ede7dd;
+      border-top: 1px solid var(--border);
       color: var(--muted);
+      font-size: 0.9rem;
     }
 
-    footer a { color: var(--accent); text-decoration: none; }
+    .contact p { margin-bottom: 8px; }
+
   </style>
 </head>
 <body>
 
 <header>
-  <div class="hero" data-aos="fade-up">
-    <h1>Mohammad <span>Mushraf</span></h1>
-    <p>AWS DevOps Engineer specializing in CI/CD, Cloud Automation, Kubernetes & Infrastructure as Code</p>
-    <div class="btns">
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </div>
+  <h1>Mohammad Mushraf</h1>
+  <p>AWS DevOps Engineer · Cloud Infrastructure · Automation</p>
 </header>
 
-<section id="about">
-  <h2>About Me</h2>
+<section>
+  <h2>Profile</h2>
+  <div class="card">
+    <p>AWS DevOps Engineer with over one year of professional experience in building, automating, and maintaining cloud infrastructure. Strong focus on reliability, clean architecture, and practical DevOps solutions.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Experience</h2>
   <div class="grid">
-    <div class="card" data-aos="fade-right">
-      <p>DevOps Engineer with 1+ year experience designing scalable cloud infrastructure, automating deployments, and improving system reliability using AWS, Docker, Kubernetes, Terraform, and Ansible.</p>
+    <div class="card">
+      <h3>DevOps Engineer – Visys Cloud Technologies</h3>
+      <p><em>Aug 2024 – Oct 2025</em></p>
+      <ul>
+        <li>Designed and maintained CI/CD pipelines using Jenkins</li>
+        <li>Containerized applications and deployed on Kubernetes (EKS)</li>
+        <li>Managed AWS infrastructure: EC2, VPC, IAM, S3, RDS, ALB</li>
+        <li>Provisioned infrastructure using Terraform and Ansible</li>
+        <li>Implemented monitoring with Prometheus, Grafana, and CloudWatch</li>
+      </ul>
     </div>
   </div>
 </section>
 
-<section id="skills">
-  <h2>Skills</h2>
-  <div class="grid">
-    <div class="card" data-aos="zoom-in"><i class="fab fa-aws"></i><h3>AWS Cloud</h3><p>EC2, VPC, S3, IAM, RDS, ALB, CloudWatch</p></div>
-    <div class="card" data-aos="zoom-in"><i class="fab fa-docker"></i><h3>Containers</h3><p>Docker, Docker Compose, Kubernetes (EKS)</p></div>
-    <div class="card" data-aos="zoom-in"><i class="fas fa-code"></i><h3>CI/CD</h3><p>Jenkins, GitHub Actions</p></div>
-    <div class="card" data-aos="zoom-in"><i class="fas fa-cubes"></i><h3>IaC</h3><p>Terraform, Ansible</p></div>
-  </div>
-</section>
-
-<section id="projects">
+<section>
   <h2>Projects</h2>
   <div class="grid">
-    <div class="card" data-aos="fade-up">
+    <div class="card">
       <h3>End-to-End DevOps Pipeline</h3>
-      <p>CI/CD pipeline with Jenkins, Dockerized microservices, Kubernetes orchestration, monitoring, and automated testing.</p>
+      <p>Automated CI/CD pipeline for a multi-service application using Jenkins, Docker, Kubernetes, and Selenium-based testing.</p>
     </div>
-    <div class="card" data-aos="fade-up">
+    <div class="card">
       <h3>MERN Stack Dockerization</h3>
-      <p>Multi-container MERN app using Docker Compose with persistent MongoDB storage.</p>
+      <p>Containerized full-stack MERN application using Docker and Docker Compose with persistent database storage.</p>
     </div>
   </div>
 </section>
 
-<section id="contact">
-  <h2>Contact</h2>
+<section>
+  <h2>Skills</h2>
   <div class="grid">
-    <div class="card" data-aos="fade-up">
-      <p>📧 mushrafmohd17@gmail.com</p>
-      <p>📞 +971 52 432 0289</p>
-      <p>📍 Dubai, UAE</p>
-    </div>
+    <div class="card">AWS Cloud (EC2, VPC, S3, IAM, RDS, ALB)</div>
+    <div class="card">Docker · Kubernetes · Jenkins</div>
+    <div class="card">Terraform · Ansible · Git</div>
+    <div class="card">Prometheus · Grafana · CloudWatch</div>
+  </div>
+</section>
+
+<section class="contact">
+  <h2>Contact</h2>
+  <div class="card">
+    <p>Email: mushrafmohd17@gmail.com</p>
+    <p>Phone: +971 52 432 0289</p>
+    <p>Location: Dubai, UAE</p>
   </div>
 </section>
 
 <footer>
-  © 2025 Mohammad Mushraf</footer>
-
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>AOS.init({ once: true, duration: 1000 });</script>
+  © 2025 Mohammad Mushraf · Professional Portfolio
+</footer>
 
 </body>
 </html>
