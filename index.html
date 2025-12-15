@@ -6,19 +6,21 @@
   <title>Mohammad Mushraf | DevOps Engineer</title>
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <!-- Icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
   <style>
+    /* Dubai-corporate color system */
     :root {
-      --bg: #f4f1ec;           /* paper-like */
+      --bg: #f7f9fc;              /* clean light background */
       --card: #ffffff;
-      --text: #2b2b2b;
-      --muted: #6b6b6b;
-      --accent: #7a5c3e;      /* vintage brown */
-      --border: #d6cfc4;
+      --text: #1f2937;            /* dark slate */
+      --muted: #6b7280;           /* professional grey */
+      --primary: #0f2a44;         /* navy blue */
+      --accent: #c9a24d;          /* subtle gold */
+      --border: #e5e7eb;
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -27,42 +29,50 @@
       font-family: 'Inter', sans-serif;
       background: var(--bg);
       color: var(--text);
-      line-height: 1.7;
+      line-height: 1.65;
     }
 
     header {
-      padding: 120px 8% 80px;
+      background: linear-gradient(135deg, #0f2a44, #142f4c);
+      color: #ffffff;
+      padding: 90px 8% 70px;
       text-align: center;
-      background: linear-gradient(to bottom, #ede7dd, #f4f1ec);
-      border-bottom: 1px solid var(--border);
     }
 
     header h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 3rem;
-      letter-spacing: 1px;
-      color: #1f1f1f;
+      font-size: 2.8rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
     }
 
     header p {
-      margin-top: 15px;
-      color: var(--muted);
-      font-size: 1.1rem;
+      margin-top: 12px;
+      font-size: 1.05rem;
+      color: #d1d5db;
     }
 
     section {
       padding: 70px 8%;
-      max-width: 1100px;
+      max-width: 1150px;
       margin: auto;
     }
 
     h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2rem;
+      font-size: 1.9rem;
+      font-weight: 700;
+      color: var(--primary);
       margin-bottom: 35px;
-      color: var(--accent);
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 10px;
+      position: relative;
+    }
+
+    h2::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background: var(--accent);
     }
 
     .grid {
@@ -74,48 +84,53 @@
     .card {
       background: var(--card);
       border: 1px solid var(--border);
-      border-radius: 6px;
-      padding: 28px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
     }
 
     .card h3 {
-      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
       margin-bottom: 10px;
-      color: #1f1f1f;
+      color: var(--primary);
     }
 
     .card p, .card li {
-      color: #333;
       font-size: 0.95rem;
+      color: #374151;
     }
 
     ul { padding-left: 18px; }
 
-    footer {
+    .skills .card {
       text-align: center;
-      padding: 30px;
-      background: #ede7dd;
-      border-top: 1px solid var(--border);
-      color: var(--muted);
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    footer {
+      background: #0f2a44;
+      color: #d1d5db;
+      text-align: center;
+      padding: 35px;
+      margin-top: 60px;
       font-size: 0.9rem;
     }
 
-    .contact p { margin-bottom: 8px; }
-
+    footer span { color: var(--accent); }
   </style>
 </head>
 <body>
 
 <header>
   <h1>Mohammad Mushraf</h1>
-  <p>AWS DevOps Engineer · Cloud Infrastructure · Automation</p>
+  <p>AWS DevOps Engineer · Cloud Infrastructure · CI/CD Automation</p>
 </header>
 
 <section>
-  <h2>Profile</h2>
+  <h2>Professional Summary</h2>
   <div class="card">
-    <p>AWS DevOps Engineer with over one year of professional experience in building, automating, and maintaining cloud infrastructure. Strong focus on reliability, clean architecture, and practical DevOps solutions.</p>
+    <p>AWS DevOps Engineer with 1+ year of industry experience delivering reliable, secure, and scalable cloud infrastructure. Strong expertise in CI/CD pipelines, container orchestration, and infrastructure automation aligned with enterprise standards.</p>
   </div>
 </section>
 
@@ -126,42 +141,44 @@
       <h3>DevOps Engineer – Visys Cloud Technologies</h3>
       <p><em>Aug 2024 – Oct 2025</em></p>
       <ul>
-        <li>Designed and maintained CI/CD pipelines using Jenkins</li>
-        <li>Containerized applications and deployed on Kubernetes (EKS)</li>
+        <li>Designed and maintained Jenkins CI/CD pipelines for automated deployments</li>
+        <li>Deployed containerized applications on Kubernetes (EKS)</li>
         <li>Managed AWS infrastructure: EC2, VPC, IAM, S3, RDS, ALB</li>
-        <li>Provisioned infrastructure using Terraform and Ansible</li>
-        <li>Implemented monitoring with Prometheus, Grafana, and CloudWatch</li>
+        <li>Provisioned cloud resources using Terraform and Ansible</li>
+        <li>Implemented monitoring using CloudWatch, Prometheus, and Grafana</li>
       </ul>
     </div>
   </div>
 </section>
 
 <section>
-  <h2>Projects</h2>
+  <h2>Key Projects</h2>
   <div class="grid">
     <div class="card">
-      <h3>End-to-End DevOps Pipeline</h3>
-      <p>Automated CI/CD pipeline for a multi-service application using Jenkins, Docker, Kubernetes, and Selenium-based testing.</p>
+      <h3>End-to-End DevOps CI/CD Pipeline</h3>
+      <p>Enterprise-grade CI/CD pipeline integrating Jenkins, Docker, Kubernetes, Selenium testing, and monitoring for production-grade deployments.</p>
     </div>
     <div class="card">
-      <h3>MERN Stack Dockerization</h3>
-      <p>Containerized full-stack MERN application using Docker and Docker Compose with persistent database storage.</p>
+      <h3>MERN Stack Containerized Deployment</h3>
+      <p>Dockerized MERN application using multi-stage builds and Docker Compose with persistent database storage.</p>
     </div>
+  </div>
+</section>
+
+<section class="skills">
+  <h2>Technical Skills</h2>
+  <div class="grid">
+    <div class="card">AWS Cloud Services</div>
+    <div class="card">Docker & Kubernetes</div>
+    <div class="card">Jenkins & GitHub Actions</div>
+    <div class="card">Terraform & Ansible</div>
+    <div class="card">Prometheus & Grafana</div>
+    <div class="card">Linux & Networking</div>
   </div>
 </section>
 
 <section>
-  <h2>Skills</h2>
-  <div class="grid">
-    <div class="card">AWS Cloud (EC2, VPC, S3, IAM, RDS, ALB)</div>
-    <div class="card">Docker · Kubernetes · Jenkins</div>
-    <div class="card">Terraform · Ansible · Git</div>
-    <div class="card">Prometheus · Grafana · CloudWatch</div>
-  </div>
-</section>
-
-<section class="contact">
-  <h2>Contact</h2>
+  <h2>Contact Information</h2>
   <div class="card">
     <p>Email: mushrafmohd17@gmail.com</p>
     <p>Phone: +971 52 432 0289</p>
@@ -170,7 +187,7 @@
 </section>
 
 <footer>
-  © 2025 Mohammad Mushraf · Professional Portfolio
+  © 2025 Mohammad Mushraf · <span>Enterprise DevOps Portfolio</span>
 </footer>
 
 </body>
